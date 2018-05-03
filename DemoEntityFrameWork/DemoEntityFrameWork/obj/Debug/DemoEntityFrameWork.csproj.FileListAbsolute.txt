@@ -1,0 +1,38 @@
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\DemoEntityFrameWork.exe.config
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\DemoEntityFrameWork.exe
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\DemoEntityFrameWork.pdb
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.csprojResolveAssemblyReference.cache
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.Properties.Resources.resources
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.csproj.GenerateResource.Cache
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.csproj.CoreCompileInputs.cache
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.exe
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.pdb
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\EntityFramework.dll
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\EntityFramework.SqlServer.dll
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\System.ComponentModel.Annotations.dll
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\EntityFramework.xml
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\EntityFramework.SqlServer.xml
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.frmSinhVien.resources
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.frmKhoa.resources
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.frmAddSinhVien.resources
+D:\Trung Kiên\CodeWindowForm\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.frmEditSinhVien.resources
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.csprojResolveAssemblyReference.cache
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.frmAddSinhVien.resources
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.frmEditSinhVien.resources
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.frmSinhVien.resources
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.frmKhoa.resources
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.Properties.Resources.resources
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.csproj.GenerateResource.cache
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.csproj.CoreCompileInputs.cache
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.exe
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.pdb
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\DemoEntityFrameWork.exe.config
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\DemoEntityFrameWork.exe
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\DemoEntityFrameWork.pdb
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\EntityFramework.dll
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\EntityFramework.SqlServer.dll
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\System.ComponentModel.Annotations.dll
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\System.Data.SqlServerCe.dll
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\EntityFramework.xml
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\bin\Debug\EntityFramework.SqlServer.xml
+D:\LTTWD\DemoEntityFrameWork\DemoEntityFrameWork\obj\Debug\DemoEntityFrameWork.csproj.CopyComplete
