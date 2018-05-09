@@ -1,0 +1,10 @@
+D:\LTTWD\CoffeeManage\CoffeeManage\bin\Debug\CoffeeManage.exe.config
+D:\LTTWD\CoffeeManage\CoffeeManage\bin\Debug\CoffeeManage.exe
+D:\LTTWD\CoffeeManage\CoffeeManage\bin\Debug\CoffeeManage.pdb
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.csprojResolveAssemblyReference.cache
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.Form1.resources
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.Properties.Resources.resources
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.csproj.GenerateResource.cache
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.csproj.CoreCompileInputs.cache
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.exe
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.pdb
