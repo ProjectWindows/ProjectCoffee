@@ -1,0 +1,14 @@
+D:\LTTWD\CoffeeManage\CoffeeManage\bin\Debug\CoffeeManage.exe.config
+D:\LTTWD\CoffeeManage\CoffeeManage\bin\Debug\CoffeeManage.exe
+D:\LTTWD\CoffeeManage\CoffeeManage\bin\Debug\CoffeeManage.pdb
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.csprojResolveAssemblyReference.cache
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.Properties.Resources.resources
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.csproj.GenerateResource.cache
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.csproj.CoreCompileInputs.cache
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.exe
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.pdb
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.Login.resources
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.Choose.resources
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.QuanLyMon.resources
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.QuanLyNhanVien.resources
+D:\LTTWD\CoffeeManage\CoffeeManage\obj\Debug\CoffeeManage.HoaDon.resources
