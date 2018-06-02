@@ -32,6 +32,8 @@ namespace CoffeeManage
         {
             try
             {
+                
+
                 dtQLThucDon = new DataTable();
                 dtQLThucDon.Clear();
 

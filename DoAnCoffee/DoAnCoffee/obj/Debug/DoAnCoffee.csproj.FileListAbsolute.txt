@@ -1,0 +1,10 @@
+C:\Users\K\source\repos\DoAnCoffee\DoAnCoffee\obj\Debug\DoAnCoffee.csprojAssemblyReference.cache
+C:\Users\K\source\repos\DoAnCoffee\DoAnCoffee\obj\Debug\DoAnCoffee.Properties.Resources.resources
+C:\Users\K\source\repos\DoAnCoffee\DoAnCoffee\obj\Debug\DoAnCoffee.QuanLyThucDon.resources
+C:\Users\K\source\repos\DoAnCoffee\DoAnCoffee\obj\Debug\DoAnCoffee.csproj.GenerateResource.cache
+C:\Users\K\source\repos\DoAnCoffee\DoAnCoffee\obj\Debug\DoAnCoffee.csproj.CoreCompileInputs.cache
+C:\Users\K\Documents\GitHub\ProjectCoffee\DoAnCoffee\DoAnCoffee\obj\Debug\DoAnCoffee.csprojAssemblyReference.cache
+C:\Users\K\Documents\GitHub\ProjectCoffee\DoAnCoffee\DoAnCoffee\obj\Debug\DoAnCoffee.Properties.Resources.resources
+C:\Users\K\Documents\GitHub\ProjectCoffee\DoAnCoffee\DoAnCoffee\obj\Debug\DoAnCoffee.QuanLyThucDon.resources
+C:\Users\K\Documents\GitHub\ProjectCoffee\DoAnCoffee\DoAnCoffee\obj\Debug\DoAnCoffee.csproj.GenerateResource.cache
+C:\Users\K\Documents\GitHub\ProjectCoffee\DoAnCoffee\DoAnCoffee\obj\Debug\DoAnCoffee.csproj.CoreCompileInputs.cache
