@@ -16,7 +16,7 @@ namespace CoffeeManage.LopXuLyDuLieu
         KetNoi k = null;
         public  XuLyQuanLyThucDon()
         {
-            k = new KetNoi();
+           k = new KetNoi();
         }
         public DataSet LayThucDon()
         {

@@ -32,15 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyNhanVien));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvThongTinNV = new System.Windows.Forms.DataGridView();
-            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoVaTenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChiNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LoaiNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LuongCB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CaLV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.managementCoffeeDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.managementCoffeeDataSet = new CoffeeManage.ManagementCoffeeDataSet();
@@ -65,6 +56,15 @@
             this.hoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hoaDonTableAdapter = new CoffeeManage.ManagementCoffeeDataSetTableAdapters.HoaDonTableAdapter();
             this.nhanVienTableAdapter = new CoffeeManage.ManagementCoffeeDataSetTableAdapters.NhanVienTableAdapter();
+            this.CaLV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LuongCB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChiNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tuoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoVaTenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinNV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nhanVienBindingSource)).BeginInit();
@@ -113,78 +113,6 @@
             this.dgvThongTinNV.Size = new System.Drawing.Size(1007, 449);
             this.dgvThongTinNV.TabIndex = 0;
             this.dgvThongTinNV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvThongTinNV_CellContentClick);
-            // 
-            // MaNV
-            // 
-            this.MaNV.DataPropertyName = "MaNV";
-            this.MaNV.HeaderText = "Mã Nhân Viên";
-            this.MaNV.Name = "MaNV";
-            this.MaNV.ReadOnly = true;
-            this.MaNV.Width = 107;
-            // 
-            // HoVaTenNV
-            // 
-            this.HoVaTenNV.DataPropertyName = "HoVaTenNV";
-            this.HoVaTenNV.HeaderText = "Họ Và Tên ";
-            this.HoVaTenNV.Name = "HoVaTenNV";
-            this.HoVaTenNV.ReadOnly = true;
-            this.HoVaTenNV.Width = 107;
-            // 
-            // Tuoi
-            // 
-            this.Tuoi.DataPropertyName = "Tuoi";
-            this.Tuoi.HeaderText = "Tuổi";
-            this.Tuoi.Name = "Tuoi";
-            this.Tuoi.ReadOnly = true;
-            this.Tuoi.Width = 107;
-            // 
-            // DiaChiNV
-            // 
-            this.DiaChiNV.DataPropertyName = "DiaChiNV";
-            this.DiaChiNV.HeaderText = "Địa Chỉ";
-            this.DiaChiNV.Name = "DiaChiNV";
-            this.DiaChiNV.ReadOnly = true;
-            this.DiaChiNV.Width = 107;
-            // 
-            // SDT
-            // 
-            this.SDT.DataPropertyName = "SDT";
-            this.SDT.HeaderText = "Số Điện Thoại";
-            this.SDT.Name = "SDT";
-            this.SDT.ReadOnly = true;
-            this.SDT.Width = 108;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.DataPropertyName = "GioiTinh";
-            this.GioiTinh.HeaderText = "Giới Tính";
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.ReadOnly = true;
-            this.GioiTinh.Width = 107;
-            // 
-            // LoaiNV
-            // 
-            this.LoaiNV.DataPropertyName = "LoaiNV";
-            this.LoaiNV.HeaderText = "Loại Nhân Viên";
-            this.LoaiNV.Name = "LoaiNV";
-            this.LoaiNV.ReadOnly = true;
-            this.LoaiNV.Width = 107;
-            // 
-            // LuongCB
-            // 
-            this.LuongCB.DataPropertyName = "LuongCB";
-            this.LuongCB.HeaderText = "Lương Cơ Bản";
-            this.LuongCB.Name = "LuongCB";
-            this.LuongCB.ReadOnly = true;
-            this.LuongCB.Width = 107;
-            // 
-            // CaLV
-            // 
-            this.CaLV.DataPropertyName = "CaLV";
-            this.CaLV.HeaderText = "Ca Làm Việc";
-            this.CaLV.Name = "CaLV";
-            this.CaLV.ReadOnly = true;
-            this.CaLV.Width = 107;
             // 
             // nhanVienBindingSource
             // 
@@ -438,6 +366,87 @@
             // nhanVienTableAdapter
             // 
             this.nhanVienTableAdapter.ClearBeforeFill = true;
+            // 
+            // CaLV
+            // 
+            this.CaLV.DataPropertyName = "CaLV";
+            this.CaLV.FillWeight = 110.6604F;
+            this.CaLV.HeaderText = "Ca Làm Việc";
+            this.CaLV.Name = "CaLV";
+            this.CaLV.ReadOnly = true;
+            this.CaLV.Width = 119;
+            // 
+            // LuongCB
+            // 
+            this.LuongCB.DataPropertyName = "LuongCB";
+            this.LuongCB.FillWeight = 108.5629F;
+            this.LuongCB.HeaderText = "Lương Cơ Bản";
+            this.LuongCB.Name = "LuongCB";
+            this.LuongCB.ReadOnly = true;
+            this.LuongCB.Width = 116;
+            // 
+            // LoaiNV
+            // 
+            this.LoaiNV.DataPropertyName = "LoaiNV";
+            this.LoaiNV.FillWeight = 106.2429F;
+            this.LoaiNV.HeaderText = "Loại Nhân Viên";
+            this.LoaiNV.Name = "LoaiNV";
+            this.LoaiNV.ReadOnly = true;
+            this.LoaiNV.Width = 114;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.DataPropertyName = "GioiTinh";
+            this.GioiTinh.FillWeight = 103.677F;
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.ReadOnly = true;
+            this.GioiTinh.Width = 111;
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "SDT";
+            this.SDT.FillWeight = 101.8823F;
+            this.SDT.HeaderText = "Số Điện Thoại";
+            this.SDT.Name = "SDT";
+            this.SDT.ReadOnly = true;
+            this.SDT.Width = 109;
+            // 
+            // DiaChiNV
+            // 
+            this.DiaChiNV.DataPropertyName = "DiaChiNV";
+            this.DiaChiNV.FillWeight = 97.81055F;
+            this.DiaChiNV.HeaderText = "Địa Chỉ";
+            this.DiaChiNV.Name = "DiaChiNV";
+            this.DiaChiNV.ReadOnly = true;
+            this.DiaChiNV.Width = 105;
+            // 
+            // Tuoi
+            // 
+            this.Tuoi.DataPropertyName = "Tuoi";
+            this.Tuoi.FillWeight = 94.35039F;
+            this.Tuoi.HeaderText = "Tuổi";
+            this.Tuoi.Name = "Tuoi";
+            this.Tuoi.ReadOnly = true;
+            this.Tuoi.Width = 101;
+            // 
+            // HoVaTenNV
+            // 
+            this.HoVaTenNV.DataPropertyName = "HoVaTenNV";
+            this.HoVaTenNV.FillWeight = 90.52328F;
+            this.HoVaTenNV.HeaderText = "Họ Và Tên ";
+            this.HoVaTenNV.Name = "HoVaTenNV";
+            this.HoVaTenNV.ReadOnly = true;
+            this.HoVaTenNV.Width = 97;
+            // 
+            // MaNV
+            // 
+            this.MaNV.DataPropertyName = "MaNV";
+            this.MaNV.FillWeight = 86.29031F;
+            this.MaNV.HeaderText = "Mã Nhân Viên";
+            this.MaNV.Name = "MaNV";
+            this.MaNV.ReadOnly = true;
+            this.MaNV.Width = 92;
             // 
             // QuanLyNhanVien
             // 

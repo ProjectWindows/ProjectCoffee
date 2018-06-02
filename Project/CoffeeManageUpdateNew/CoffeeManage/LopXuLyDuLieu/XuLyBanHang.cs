@@ -27,5 +27,17 @@ namespace CoffeeManage.LopXuLyDuLieu
             string sql = "Insert Into KhachHang(MaKH,TenKH,DiaChiKH,SDT)Values(" + MaKh + ",N'" + TenKH + "',N'" + DiaChi + "','" + SDT + "')";
             return KetNoi.ExecuteNonQuery(sql, CommandType.Text,ref err);
         }
+        public DataSet LayTenKH()
+        {
+            string sql = "Select TenKH from KhachHang";
+            return k.ExecuteQueryDataSet(sql, CommandType.Text);
+           
+        }
+        public DataSet LayTenNV()
+        {
+            string sql = "Select HoVaTenNV from NhanVien";
+            return k.ExecuteQueryDataSet(sql, CommandType.Text);
+
+        }
     }
 }

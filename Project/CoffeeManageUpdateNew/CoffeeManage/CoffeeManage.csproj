@@ -84,8 +84,10 @@
     </Compile>
     <Compile Include="LopDuLieu\KetNoi.cs" />
     <Compile Include="LopXuLyDuLieu\XuLyBanHang.cs" />
+    <Compile Include="LopXuLyDuLieu\XuLyLichSu.cs" />
     <Compile Include="LopXuLyDuLieu\XuLyQuanLyNhanVien.cs" />
     <Compile Include="LopXuLyDuLieu\XuLyQuanLyThucDon.cs" />
+    <Compile Include="LopXuLyDuLieu\XuLyTaiKhoan.cs" />
     <Compile Include="ManagementCoffeeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -36,23 +36,31 @@ namespace CoffeeManage
         {
             try
             {
+                // show thông tin bảng thực đơn lên datagridview
                 dtQLThucDon = new DataTable();
                 dtQLThucDon.Clear();
-
                 DataSet ds = dsThucDon.LayThucDon();
                 dtQLThucDon = ds.Tables[0];
                 dv = new DataView(dtQLThucDon);
-
                 dgvThongTinMon.DataSource = dv;
-
                 dgvThongTinMon.AutoResizeColumns();
 
+                //show thông tin tên khách hàng lên combo khách hàng
                 dtKhacHang = new DataTable();
-                dtKhacHang.Clear();
-                DataSet ds1 = dsBanHang.LayKhacHang();
-                dtKhacHang = ds1.Tables[0];
-                cbKhachHang.DataSource = ds1;
-                
+                DataSet dsKH = dsBanHang.LayTenKH();
+                dtKhacHang = dsKH.Tables[0];
+                cbKhachHang.DataSource = dtKhacHang;
+                cbKhachHang.DisplayMember = "TenKH";
+                cbKhachHang.ValueMember = "TenKH";
+
+                // show thông tin nhân viên lên combo nhân viên
+                dtKhacHang = new DataTable();
+                DataSet dsNV = dsBanHang.LayTenNV();
+                dtKhacHang = dsNV.Tables[0];
+                cbNhanVien.DataSource = dtKhacHang;
+                cbNhanVien.DisplayMember = "HoVaTenNV";
+                cbNhanVien.ValueMember = "HoVaTenNV";
+
             }
             catch (SqlException)
             {
@@ -109,28 +117,21 @@ namespace CoffeeManage
                 String str = String.Format("TheLoai like '%{0}%'", cbLoaiMon.Text);
                 dv.RowFilter = str;
             }
-            else
+            if (cbLoaiMon.Text == "Bánh")
             {
-                if (cbLoaiMon.Text == "Bánh")
-                {
-                    String str = String.Format("TheLoai like '%{0}%'", cbLoaiMon.Text);
-                    dv.RowFilter = str;
-                }
-                else
-                {
-                    if (cbLoaiMon.Text == "Khác")
-                    {
-                        String str = String.Format("TheLoai like '%{0}%'", cbLoaiMon.Text);
-                        dv.RowFilter = str;
-                    }
-                    else
-                    {
-                        if (cbLoaiMon.Text == "Tất Cả")
-                        {
-                            dgvThongTinMon.DataSource = dtQLThucDon;
-                        }
-                    }
-                }
+                String str = String.Format("TheLoai like '%{0}%'", cbLoaiMon.Text);
+                dv.RowFilter = str;
+            }
+
+            if (cbLoaiMon.Text == "Khác")
+            {
+                String str = String.Format("TheLoai like '%{0}%'", cbLoaiMon.Text);
+                dv.RowFilter = str;
+            }
+
+            if (cbLoaiMon.Text == "Tất Cả")
+            {
+                dgvThongTinMon.DataSource = dtQLThucDon;
             }
         }
 
@@ -249,11 +250,7 @@ namespace CoffeeManage
             txtThanhTien.Text = (tien + (tien * 10 / 100)).ToString();
         }
 
-        private void btnLamMoi_Click(object sender, EventArgs e)
-        {
-            dgvMonDaChon.Rows.Clear();
-            dgvMonDaChon.Refresh();
-        }
+       
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
@@ -265,6 +262,11 @@ namespace CoffeeManage
             XuLyBanHang x = new XuLyBanHang();
             x.ThemKhachHang(txtMaKH.Text, txtTenKh.Text, txtDiaChi.Text, txtSDT.Text,ref err);
             MessageBox.Show("Đã thêm");
+        }
+
+        private void btnThanhToan_Click(object sender, EventArgs e)
+        {
+
         }
 
         int TimTenTrung(string ma)
