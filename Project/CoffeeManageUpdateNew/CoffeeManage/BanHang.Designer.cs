@@ -51,7 +51,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnBot = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.btnLamMoi = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvMonDaChon = new System.Windows.Forms.DataGridView();
             this.MaMon1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -79,7 +78,6 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnThanhToan = new System.Windows.Forms.Button();
-            this.btnInHoaDon = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtThanhTien = new System.Windows.Forms.TextBox();
@@ -183,7 +181,7 @@
             // 
             this.btnThem.BackColor = System.Drawing.Color.White;
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(961, 401);
+            this.btnThem.Location = new System.Drawing.Point(961, 469);
             this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(143, 48);
@@ -303,7 +301,7 @@
             // 
             this.btnBot.BackColor = System.Drawing.Color.White;
             this.btnBot.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBot.Location = new System.Drawing.Point(961, 457);
+            this.btnBot.Location = new System.Drawing.Point(961, 547);
             this.btnBot.Margin = new System.Windows.Forms.Padding(4);
             this.btnBot.Name = "btnBot";
             this.btnBot.Size = new System.Drawing.Size(143, 48);
@@ -316,7 +314,7 @@
             // 
             this.btnXoa.BackColor = System.Drawing.Color.White;
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(961, 522);
+            this.btnXoa.Location = new System.Drawing.Point(961, 613);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(143, 48);
@@ -324,19 +322,6 @@
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.BackColor = System.Drawing.Color.White;
-            this.btnLamMoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLamMoi.Location = new System.Drawing.Point(961, 589);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(143, 48);
-            this.btnLamMoi.TabIndex = 3;
-            this.btnLamMoi.Text = "Làm Mới";
-            this.btnLamMoi.UseVisualStyleBackColor = false;
-            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // groupBox2
             // 
@@ -597,7 +582,6 @@
             // 
             this.groupBox5.Controls.Add(this.pictureBox2);
             this.groupBox5.Controls.Add(this.btnThanhToan);
-            this.groupBox5.Controls.Add(this.btnInHoaDon);
             this.groupBox5.Controls.Add(this.btnThoat);
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.ForeColor = System.Drawing.Color.Blue;
@@ -623,31 +607,20 @@
             // 
             this.btnThanhToan.BackColor = System.Drawing.Color.White;
             this.btnThanhToan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanhToan.Location = new System.Drawing.Point(7, 120);
+            this.btnThanhToan.Location = new System.Drawing.Point(7, 75);
             this.btnThanhToan.Margin = new System.Windows.Forms.Padding(4);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(143, 48);
             this.btnThanhToan.TabIndex = 3;
             this.btnThanhToan.Text = "Thanh Toán";
             this.btnThanhToan.UseVisualStyleBackColor = false;
-            // 
-            // btnInHoaDon
-            // 
-            this.btnInHoaDon.BackColor = System.Drawing.Color.White;
-            this.btnInHoaDon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInHoaDon.Location = new System.Drawing.Point(7, 47);
-            this.btnInHoaDon.Margin = new System.Windows.Forms.Padding(4);
-            this.btnInHoaDon.Name = "btnInHoaDon";
-            this.btnInHoaDon.Size = new System.Drawing.Size(143, 48);
-            this.btnInHoaDon.TabIndex = 3;
-            this.btnInHoaDon.Text = "In Hóa Đơn";
-            this.btnInHoaDon.UseVisualStyleBackColor = false;
+            this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
             // 
             // btnThoat
             // 
             this.btnThoat.BackColor = System.Drawing.Color.White;
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(7, 188);
+            this.btnThoat.Location = new System.Drawing.Point(7, 150);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(143, 48);
@@ -770,7 +743,6 @@
             this.Controls.Add(this.cbLoaiMon);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnBot);
             this.Controls.Add(this.btnThem);
@@ -838,10 +810,8 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox ptAnh;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button btnThanhToan;
-        private System.Windows.Forms.Button btnInHoaDon;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
