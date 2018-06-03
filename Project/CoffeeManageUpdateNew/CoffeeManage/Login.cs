@@ -8,22 +8,72 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using CoffeeManage.LopXuLyDuLieu;
 
 namespace CoffeeManage
 {
     public partial class Login : Form
     {
+        DataTable dtLogin = null;
+        TaiKhoan tk = new TaiKhoan();
+        DataView dv;
+        string err;
         public Login()
         {
             InitializeComponent();
 
         }
-        // CHUỖI KẾT NỐI
-        string ConnectSQL = "Data Source=(local);"
-            + "Initial Catalog=ManagementCoffee;" +
-            "Integrated Security=True";
-        //ĐỐI TƯỢNG KẾT NỐI
-        SqlConnection Object = null;
+        void LoadData()
+        {
+            try
+            {
+                dtLogin = tk.KiemTraTaiKhoan();
+                if(txtUserName.Text=="")
+                {
+                    MessageBox.Show("Tài Khoản không được bỏ trống!!!");
+                }
+                else
+                {
+                    if(txtPassWord.Text=="")
+                    {
+                        MessageBox.Show("Mật Khẩu không được bỏ trống !!!!");
+                    }
+                    else
+                    {
+                        bool co = false;
+                        for (int i=0;i<dtLogin.Rows.Count;i++)
+                        {
+                            if(txtUserName.Text==dtLogin.Rows[i][0].ToString() && txtPassWord.Text==dtLogin.Rows[i][1].ToString())
+                            {
+                                if(i==0)
+                                {
+                                    Choose c = new Choose();
+                                    c.Show();
+                                    co = true;
+                                }
+                                else
+                                {
+                                    BanHang b = new BanHang();
+                                    b.Show();
+                                    co = true;
+                                }
+                                this.Hide();
+                            }
+                        }
+                        if(co==false)
+                        {
+                            MessageBox.Show("Tài Khoản hoặc Mật Khẩu Không Đúng!!!");
+                        }
+                    }
+                }
+
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Không lấy được nội dung trong bạng.Lỗi rồi!!!!");
+            }
+        }
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -47,20 +97,7 @@ namespace CoffeeManage
             }
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            string TenTK = txtUserName.ToString();
-            //if (NhapTenTaiKhoan(TenTK))
-            //{
-
-            //}
-
-        }
-
-        //public bool NhapTenTaiKhoan(string TenTaiKhoan)
-        //{
-
-        //}
+        
         public bool NhapMatKhau(string MatKhau)
         {
             MatKhau = MatKhau.Trim();
@@ -69,6 +106,12 @@ namespace CoffeeManage
                 return false;
             }
             else return true;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+               LoadData();
+           
         }
     }
 }

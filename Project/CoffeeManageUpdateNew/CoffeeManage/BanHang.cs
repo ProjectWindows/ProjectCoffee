@@ -16,16 +16,18 @@ namespace CoffeeManage
 {
     public partial class BanHang : Form
     {
+        public static int dem;
         DataTable dtQLThucDon = null;
         DataTable dtKhacHang=null;
         DataView dv;
+        DataView dvKH;
         string err;
         byte[] b;
         int r, k = 0;
         int sodong = 0;
         float tien;
-        XuLyQuanLyThucDon dsThucDon = new XuLyQuanLyThucDon();
-        XuLyBanHang dsBanHang = new XuLyBanHang();
+        LopXuLyDuLieu.QuanLyThucDon dsThucDon = new LopXuLyDuLieu.QuanLyThucDon();
+        LopXuLyDuLieu.BanHang dsBanHang = new LopXuLyDuLieu.BanHang();
 
         public BanHang()
         {
@@ -45,13 +47,14 @@ namespace CoffeeManage
                 dgvThongTinMon.DataSource = dv;
                 dgvThongTinMon.AutoResizeColumns();
 
-                //show thông tin tên khách hàng lên combo khách hàng
+                // show thông tin khách hàng
                 dtKhacHang = new DataTable();
-                DataSet dsKH = dsBanHang.LayTenKH();
+                dtKhacHang.Clear();
+                DataSet dsKH = dsBanHang.LayKhacHang();
                 dtKhacHang = dsKH.Tables[0];
-                cbKhachHang.DataSource = dtKhacHang;
-                cbKhachHang.DisplayMember = "TenKH";
-                cbKhachHang.ValueMember = "TenKH";
+                dvKH = new DataView(dtKhacHang);
+                dgvThongTinKhachHang.DataSource = dvKH;
+                dgvThongTinKhachHang.AutoResizeColumns();
 
                 // show thông tin nhân viên lên combo nhân viên
                 dtKhacHang = new DataTable();
@@ -82,7 +85,9 @@ namespace CoffeeManage
 
         private void BanHang_Load(object sender, EventArgs e)
         {
-           
+            // TODO: This line of code loads data into the 'managementCoffeeDataSet.KhachHang' table. You can move, or remove it, as needed.
+            this.khachHangTableAdapter.Fill(this.managementCoffeeDataSet.KhachHang);
+
             LoadData();
         }
 
@@ -110,6 +115,7 @@ namespace CoffeeManage
 
         private void cbLoaiMon_TextChanged(object sender, EventArgs e)
         {
+            LoadData();
             this.txtTimKiem.Clear();
             //LỌC THEO THỂ LOẠI MÓN ĂN
             if (cbLoaiMon.Text == "Cafe")
@@ -133,10 +139,12 @@ namespace CoffeeManage
             {
                 dgvThongTinMon.DataSource = dtQLThucDon;
             }
+            
         }
 
         private void txtTimKiem_TextChanged(object sender, EventArgs e)
         {
+            LoadData();
             this.cbLoaiMon.Text = "";
             if (txtTimKiem.Text == "")
             {
@@ -147,6 +155,7 @@ namespace CoffeeManage
                 String str = String.Format("TenMon like '%{0}%'", txtTimKiem.Text);
                 dv.RowFilter = str;
             }
+           
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -257,16 +266,42 @@ namespace CoffeeManage
 
         }
 
-        private void btnThemKH_Click(object sender, EventArgs e)
+        private void btnChonKH_Click(object sender, EventArgs e)
         {
-            XuLyBanHang x = new XuLyBanHang();
-            x.ThemKhachHang(txtMaKH.Text, txtTenKh.Text, txtDiaChi.Text, txtSDT.Text,ref err);
-            MessageBox.Show("Đã thêm");
+            
+            r = dgvThongTinKhachHang.CurrentCell.RowIndex;
+            if (dgvThongTinKhachHang.Rows[r].Cells[1].Value.ToString() != null)
+            {
+                txtKH.Text = dgvThongTinKhachHang.Rows[r].Cells[1].Value.ToString();
+            }
+            else
+                MessageBox.Show("Mời Chọn Lại");
         }
 
-        private void btnThanhToan_Click(object sender, EventArgs e)
+        private void txtTimKiemKH_TextChanged(object sender, EventArgs e)
         {
+            LoadData();
+            if (txtTimKiemKH.Text == "")
+            {
+                dvKH.RowFilter = "";
+            }
+            else
+            {
+                String str = String.Format("TenKH like '%{0}%'", txtTimKiemKH.Text);
+                dvKH.RowFilter = str;
+            }
+        }
 
+        private void btnDKKH_Click(object sender, EventArgs e)
+        {
+            dem = 0;
+            DangKyKhachHang d = new DangKyKhachHang(null, null, null,null);
+            d.Show();
+        }
+
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            LoadData();
         }
 
         int TimTenTrung(string ma)

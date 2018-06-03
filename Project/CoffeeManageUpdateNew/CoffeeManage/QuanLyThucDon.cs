@@ -21,7 +21,7 @@ namespace CoffeeManage
         DataView dv;
         byte[] b;
         string err;
-        XuLyQuanLyThucDon dsThucDon = new XuLyQuanLyThucDon();
+        LopXuLyDuLieu.QuanLyThucDon dsThucDon = new LopXuLyDuLieu.QuanLyThucDon();
         
 
         public QuanLyThucDon()
@@ -32,8 +32,6 @@ namespace CoffeeManage
         {
             try
             {
-                
-
                 dtQLThucDon = new DataTable();
                 dtQLThucDon.Clear();
 
@@ -82,6 +80,7 @@ namespace CoffeeManage
         
         private void cbTheLoai_TextChanged(object sender, EventArgs e)
         {
+            LoadData();
             this.txtMa.Clear();
             this.txtTenMon.Clear();
             //LỌC THEO THỂ LOẠI MÓN ĂN
@@ -118,6 +117,7 @@ namespace CoffeeManage
 
         private void txtMa_TextChanged(object sender, EventArgs e)
         {
+            LoadData();
             this.txtTenMon.Clear();
             this.cbTheLoai.Text = "";
             if (txtMa.Text == "")
@@ -168,6 +168,7 @@ namespace CoffeeManage
 
         private void txtTenMon_TextChanged(object sender, EventArgs e)
         {
+            LoadData();
             this.txtMa.Clear();
             this.cbTheLoai.Text = "";
             if (txtTenMon.Text == "")

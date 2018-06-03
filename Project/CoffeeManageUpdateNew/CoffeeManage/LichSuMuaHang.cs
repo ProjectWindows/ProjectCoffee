@@ -17,7 +17,7 @@ namespace CoffeeManage
         DataTable dtHoaDon = null;
         DataView dv;
         string err;
-        LopXuLyDuLieu.XuLyLichSu dsLichSu = new LopXuLyDuLieu.XuLyLichSu();
+        LopXuLyDuLieu.LichSu dsLichSu = new LopXuLyDuLieu.LichSu();
         public LichSuMuaHang()
         {
             InitializeComponent();
@@ -48,6 +48,7 @@ namespace CoffeeManage
 
         private void txtTenThuNgan_TextChanged(object sender, EventArgs e)
         {
+            LoadData();
             this.txtMaHD.Clear();
             this.txtNgay.Clear();
             //LỌC THEO THỂ LOẠI MÓN ĂN
@@ -72,6 +73,7 @@ namespace CoffeeManage
 
         private void txtMaHD_TextChanged(object sender, EventArgs e)
         {
+            LoadData();
             this.txtTenThuNgan.Clear();
             this.txtNgay.Clear();
             //LỌC THEO THỂ LOẠI MÓN ĂN
@@ -88,6 +90,7 @@ namespace CoffeeManage
 
         private void txtNgay_TextChanged(object sender, EventArgs e)
         {
+            LoadData();
             this.txtTenThuNgan.Clear();
             this.txtMaHD.Clear();
             //LỌC THEO THỂ LOẠI MÓN ĂN

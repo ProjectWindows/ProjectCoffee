@@ -65,5 +65,11 @@ namespace CoffeeManage
             q.Show();
         }
 
+        private void btnTTKH_Click(object sender, EventArgs e)
+        {
+            ThongTinKhachHang kh = new ThongTinKhachHang();
+            this.Hide();
+            kh.Show();
+        }
     }
 }

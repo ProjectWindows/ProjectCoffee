@@ -19,7 +19,7 @@ namespace CoffeeManage
         DataView dv;
         string err;
         byte[] b;
-        LopXuLyDuLieu.XuLyQuanLyNhanVien QLNhanVien = new LopXuLyDuLieu.XuLyQuanLyNhanVien();
+        LopXuLyDuLieu.QuanLyNhanVien QLNhanVien = new LopXuLyDuLieu.QuanLyNhanVien();
 
         public QuanLyNhanVien()
         {
@@ -79,7 +79,7 @@ namespace CoffeeManage
 
         private void cbLoaiNV_TextChanged(object sender, EventArgs e)
         {
-            
+            LoadData();
             this.txtMaNV.Clear();
             this.txtTenNV.Clear();
             this.cbGioiTinh.Text = "";
@@ -141,6 +141,7 @@ namespace CoffeeManage
 
         private void cbGioiTinh_TextChanged(object sender, EventArgs e)
         {
+            LoadData();
             this.txtMaNV.Clear();
             this.txtTenNV.Clear();
             this.cbLoaiNV.Text = "";
@@ -168,6 +169,7 @@ namespace CoffeeManage
 
         private void txtTenNV_TextChanged(object sender, EventArgs e)
         {
+            LoadData();
             this.txtMaNV.Clear();
             this.cbLoaiNV.Text = "";
             this.cbGioiTinh.Text = "";
@@ -184,6 +186,7 @@ namespace CoffeeManage
 
         private void txtMaNV_TextChanged(object sender, EventArgs e)
         {
+            LoadData();
             this.txtTenNV.Clear();
             this.cbGioiTinh.Text = "";
             this.cbLoaiNV.Text = "";

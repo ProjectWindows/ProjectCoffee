@@ -107,7 +107,7 @@ namespace CoffeeManage
             {
                 if (img.Length > 1)
                 {
-                    XuLyQuanLyNhanVien x = new XuLyQuanLyNhanVien();
+                    LopXuLyDuLieu.QuanLyNhanVien x = new LopXuLyDuLieu.QuanLyNhanVien();
                     x.ThemNhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, txtTuoi.Text, txtDiaChi.Text,txtSDT.Text,cbGioiTinh.Text,cbLoaiNhanVien.Text,txtLuong.Text,txtCaLV.Text,bytes, ref err);
                     MessageBox.Show("Đã Thêm Xong!!!");
                 }
@@ -127,7 +127,7 @@ namespace CoffeeManage
                 ptAnh.Image.Save(ms, ptAnh.Image.RawFormat);
                 byte[] b = ms.GetBuffer();
                 ms.Close();
-                XuLyQuanLyNhanVien x = new XuLyQuanLyNhanVien();
+                LopXuLyDuLieu.QuanLyNhanVien x = new LopXuLyDuLieu.QuanLyNhanVien();
                 x.CapNhatNhanVien(txtMaNhanVien.Text, txtTenNhanVien.Text, txtTuoi.Text, txtDiaChi.Text,txtSDT.Text,cbGioiTinh.Text,cbLoaiNhanVien.Text,txtLuong.Text,txtCaLV.Text, b, ref err);
                 MessageBox.Show("Đã Cập Nhật Xong!!!");
             }

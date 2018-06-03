@@ -28,47 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongTinTaiKhoan));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCapNhatAD = new System.Windows.Forms.Button();
             this.ptbAnhQuanLy = new System.Windows.Forms.PictureBox();
-            this.txtMatKhau = new System.Windows.Forms.TextBox();
-            this.txtTenNguoiDung = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtQuyen = new System.Windows.Forms.TextBox();
+            this.txtMatKhauAD = new System.Windows.Forms.TextBox();
+            this.txtGioiTinh = new System.Windows.Forms.TextBox();
+            this.txtTenNguoiDungAD = new System.Windows.Forms.TextBox();
+            this.txtTaiKhoanAD = new System.Windows.Forms.TextBox();
+            this.txtQuyenAD = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnCapNhatNV = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txttenNguoiDungNV = new System.Windows.Forms.TextBox();
+            this.txtMatKhauNV = new System.Windows.Forms.TextBox();
+            this.txtTaiKhoanNV = new System.Windows.Forms.TextBox();
+            this.txtQuyenNV = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cbGioiTinh = new System.Windows.Forms.ComboBox();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.managementCoffeeDataSet = new CoffeeManage.ManagementCoffeeDataSet();
+            this.userLoginBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.userLoginTableAdapter = new CoffeeManage.ManagementCoffeeDataSetTableAdapters.UserLoginTableAdapter();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAnhQuanLy)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.managementCoffeeDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userLoginBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cbGioiTinh);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.btnCapNhatAD);
             this.groupBox1.Controls.Add(this.ptbAnhQuanLy);
-            this.groupBox1.Controls.Add(this.txtMatKhau);
-            this.groupBox1.Controls.Add(this.txtTenNguoiDung);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.txtQuyen);
+            this.groupBox1.Controls.Add(this.txtMatKhauAD);
+            this.groupBox1.Controls.Add(this.txtGioiTinh);
+            this.groupBox1.Controls.Add(this.txtTenNguoiDungAD);
+            this.groupBox1.Controls.Add(this.txtTaiKhoanAD);
+            this.groupBox1.Controls.Add(this.txtQuyenAD);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -85,17 +91,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Quản Lý";
             // 
-            // button2
+            // btnCapNhatAD
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(179, 497);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 32);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Cập Nhật";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCapNhatAD.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCapNhatAD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhatAD.Location = new System.Drawing.Point(200, 497);
+            this.btnCapNhatAD.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCapNhatAD.Name = "btnCapNhatAD";
+            this.btnCapNhatAD.Size = new System.Drawing.Size(156, 32);
+            this.btnCapNhatAD.TabIndex = 1;
+            this.btnCapNhatAD.Text = "Cập Nhật";
+            this.btnCapNhatAD.UseVisualStyleBackColor = true;
+            this.btnCapNhatAD.Click += new System.EventHandler(this.btnCapNhatAD_Click);
             // 
             // ptbAnhQuanLy
             // 
@@ -108,37 +115,47 @@
             this.ptbAnhQuanLy.TabIndex = 4;
             this.ptbAnhQuanLy.TabStop = false;
             // 
-            // txtMatKhau
+            // txtMatKhauAD
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(200, 306);
-            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(4);
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(243, 35);
-            this.txtMatKhau.TabIndex = 1;
+            this.txtMatKhauAD.Location = new System.Drawing.Point(200, 306);
+            this.txtMatKhauAD.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMatKhauAD.Name = "txtMatKhauAD";
+            this.txtMatKhauAD.Size = new System.Drawing.Size(243, 35);
+            this.txtMatKhauAD.TabIndex = 1;
             // 
-            // txtTenNguoiDung
+            // txtGioiTinh
             // 
-            this.txtTenNguoiDung.Location = new System.Drawing.Point(200, 373);
-            this.txtTenNguoiDung.Margin = new System.Windows.Forms.Padding(4);
-            this.txtTenNguoiDung.Name = "txtTenNguoiDung";
-            this.txtTenNguoiDung.Size = new System.Drawing.Size(243, 35);
-            this.txtTenNguoiDung.TabIndex = 1;
+            this.txtGioiTinh.Location = new System.Drawing.Point(200, 435);
+            this.txtGioiTinh.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGioiTinh.Name = "txtGioiTinh";
+            this.txtGioiTinh.Size = new System.Drawing.Size(243, 35);
+            this.txtGioiTinh.TabIndex = 1;
             // 
-            // textBox1
+            // txtTenNguoiDungAD
             // 
-            this.textBox1.Location = new System.Drawing.Point(200, 240);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(243, 35);
-            this.textBox1.TabIndex = 1;
+            this.txtTenNguoiDungAD.Location = new System.Drawing.Point(200, 373);
+            this.txtTenNguoiDungAD.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTenNguoiDungAD.Name = "txtTenNguoiDungAD";
+            this.txtTenNguoiDungAD.Size = new System.Drawing.Size(243, 35);
+            this.txtTenNguoiDungAD.TabIndex = 1;
             // 
-            // txtQuyen
+            // txtTaiKhoanAD
             // 
-            this.txtQuyen.Location = new System.Drawing.Point(200, 181);
-            this.txtQuyen.Margin = new System.Windows.Forms.Padding(4);
-            this.txtQuyen.Name = "txtQuyen";
-            this.txtQuyen.Size = new System.Drawing.Size(243, 35);
-            this.txtQuyen.TabIndex = 1;
+            this.txtTaiKhoanAD.Location = new System.Drawing.Point(200, 240);
+            this.txtTaiKhoanAD.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTaiKhoanAD.Name = "txtTaiKhoanAD";
+            this.txtTaiKhoanAD.Size = new System.Drawing.Size(243, 35);
+            this.txtTaiKhoanAD.TabIndex = 1;
+            // 
+            // txtQuyenAD
+            // 
+            this.txtQuyenAD.Location = new System.Drawing.Point(200, 181);
+            this.txtQuyenAD.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQuyenAD.Name = "txtQuyenAD";
+            this.txtQuyenAD.ReadOnly = true;
+            this.txtQuyenAD.Size = new System.Drawing.Size(243, 35);
+            this.txtQuyenAD.TabIndex = 1;
+            this.txtQuyenAD.Text = "Admin";
             // 
             // label5
             // 
@@ -150,7 +167,6 @@
             this.label5.Size = new System.Drawing.Size(98, 23);
             this.label5.TabIndex = 2;
             this.label5.Text = "Giới Tính:";
-        
             // 
             // label4
             // 
@@ -162,7 +178,6 @@
             this.label4.Size = new System.Drawing.Size(101, 23);
             this.label4.TabIndex = 2;
             this.label4.Text = "Mật Khảu:";
-           
             // 
             // label3
             // 
@@ -174,7 +189,6 @@
             this.label3.Size = new System.Drawing.Size(156, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "Tên Người Dùng:";
-           
             // 
             // label2
             // 
@@ -186,7 +200,6 @@
             this.label2.Size = new System.Drawing.Size(141, 23);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên Tài Khoản:";
-       
             // 
             // label1
             // 
@@ -201,11 +214,13 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.btnCapNhatNV);
             this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.txttenNguoiDungNV);
+            this.groupBox2.Controls.Add(this.txtMatKhauNV);
+            this.groupBox2.Controls.Add(this.txtTaiKhoanNV);
+            this.groupBox2.Controls.Add(this.txtQuyenNV);
+            this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
@@ -215,22 +230,23 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(513, 451);
+            this.groupBox2.Size = new System.Drawing.Size(513, 489);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Nhân Viên";
             // 
-            // button3
+            // btnCapNhatNV
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(200, 385);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 32);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "Cập Nhật";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCapNhatNV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCapNhatNV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhatNV.Location = new System.Drawing.Point(200, 435);
+            this.btnCapNhatNV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCapNhatNV.Name = "btnCapNhatNV";
+            this.btnCapNhatNV.Size = new System.Drawing.Size(156, 32);
+            this.btnCapNhatNV.TabIndex = 1;
+            this.btnCapNhatNV.Text = "Cập Nhật";
+            this.btnCapNhatNV.UseVisualStyleBackColor = true;
+            this.btnCapNhatNV.Click += new System.EventHandler(this.btnCapNhatNV_Click);
             // 
             // pictureBox1
             // 
@@ -243,29 +259,50 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox2
+            // txttenNguoiDungNV
             // 
-            this.textBox2.Location = new System.Drawing.Point(200, 306);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(243, 35);
-            this.textBox2.TabIndex = 1;
+            this.txttenNguoiDungNV.Location = new System.Drawing.Point(200, 373);
+            this.txttenNguoiDungNV.Margin = new System.Windows.Forms.Padding(4);
+            this.txttenNguoiDungNV.Name = "txttenNguoiDungNV";
+            this.txttenNguoiDungNV.Size = new System.Drawing.Size(243, 35);
+            this.txttenNguoiDungNV.TabIndex = 1;
             // 
-            // textBox4
+            // txtMatKhauNV
             // 
-            this.textBox4.Location = new System.Drawing.Point(200, 240);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(243, 35);
-            this.textBox4.TabIndex = 1;
+            this.txtMatKhauNV.Location = new System.Drawing.Point(200, 306);
+            this.txtMatKhauNV.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMatKhauNV.Name = "txtMatKhauNV";
+            this.txtMatKhauNV.Size = new System.Drawing.Size(243, 35);
+            this.txtMatKhauNV.TabIndex = 1;
             // 
-            // textBox5
+            // txtTaiKhoanNV
             // 
-            this.textBox5.Location = new System.Drawing.Point(200, 181);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(243, 35);
-            this.textBox5.TabIndex = 1;
+            this.txtTaiKhoanNV.Location = new System.Drawing.Point(200, 240);
+            this.txtTaiKhoanNV.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTaiKhoanNV.Name = "txtTaiKhoanNV";
+            this.txtTaiKhoanNV.Size = new System.Drawing.Size(243, 35);
+            this.txtTaiKhoanNV.TabIndex = 1;
+            // 
+            // txtQuyenNV
+            // 
+            this.txtQuyenNV.Location = new System.Drawing.Point(200, 181);
+            this.txtQuyenNV.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQuyenNV.Name = "txtQuyenNV";
+            this.txtQuyenNV.ReadOnly = true;
+            this.txtQuyenNV.Size = new System.Drawing.Size(243, 35);
+            this.txtQuyenNV.TabIndex = 1;
+            this.txtQuyenNV.Text = "Employees";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(13, 379);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(156, 23);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Tên Người Dùng:";
             // 
             // label7
             // 
@@ -277,7 +314,6 @@
             this.label7.Size = new System.Drawing.Size(101, 23);
             this.label7.TabIndex = 2;
             this.label7.Text = "Mật Khảu:";
-           
             // 
             // label9
             // 
@@ -289,7 +325,6 @@
             this.label9.Size = new System.Drawing.Size(141, 23);
             this.label9.TabIndex = 2;
             this.label9.Text = "Tên Tài Khoản:";
-        
             // 
             // label10
             // 
@@ -302,87 +337,90 @@
             this.label10.TabIndex = 2;
             this.label10.Text = "Quyền:";
             // 
-            // menuStrip1
+            // btnThoat
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thoátToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1089, 28);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Location = new System.Drawing.Point(737, 530);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(156, 55);
+            this.btnThoat.TabIndex = 1;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // thoátToolStripMenuItem
+            // managementCoffeeDataSet
             // 
-            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
-            this.thoátToolStripMenuItem.Text = "Thoát";
-            this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
+            this.managementCoffeeDataSet.DataSetName = "ManagementCoffeeDataSet";
+            this.managementCoffeeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // cbGioiTinh
+            // userLoginBindingSource
             // 
-            this.cbGioiTinh.FormattingEnabled = true;
-            this.cbGioiTinh.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.cbGioiTinh.Location = new System.Drawing.Point(200, 436);
-            this.cbGioiTinh.Name = "cbGioiTinh";
-            this.cbGioiTinh.Size = new System.Drawing.Size(243, 34);
-            this.cbGioiTinh.TabIndex = 5;
+            this.userLoginBindingSource.DataMember = "UserLogin";
+            this.userLoginBindingSource.DataSource = this.managementCoffeeDataSet;
+            // 
+            // userLoginTableAdapter
+            // 
+            this.userLoginTableAdapter.ClearBeforeFill = true;
             // 
             // ThongTinTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1089, 607);
+            this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ThongTinTaiKhoan";
             this.Text = "ThongTinTaiKhoan";
+            this.Load += new System.EventHandler(this.ThongTinTaiKhoan_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbAnhQuanLy)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.managementCoffeeDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userLoginBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtQuyen;
+        private System.Windows.Forms.TextBox txtQuyenAD;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTaiKhoanAD;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCapNhatAD;
         private System.Windows.Forms.PictureBox ptbAnhQuanLy;
-        private System.Windows.Forms.TextBox txtMatKhau;
-        private System.Windows.Forms.TextBox txtTenNguoiDung;
+        private System.Windows.Forms.TextBox txtMatKhauAD;
+        private System.Windows.Forms.TextBox txtTenNguoiDungAD;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnCapNhatNV;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtMatKhauNV;
+        private System.Windows.Forms.TextBox txtTaiKhoanNV;
+        private System.Windows.Forms.TextBox txtQuyenNV;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem thoátToolStripMenuItem;
-        private System.Windows.Forms.ComboBox cbGioiTinh;
+        private System.Windows.Forms.TextBox txtGioiTinh;
+        private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.TextBox txttenNguoiDungNV;
+        private System.Windows.Forms.Label label6;
+        private ManagementCoffeeDataSet managementCoffeeDataSet;
+        private System.Windows.Forms.BindingSource userLoginBindingSource;
+        private ManagementCoffeeDataSetTableAdapters.UserLoginTableAdapter userLoginTableAdapter;
     }
 }

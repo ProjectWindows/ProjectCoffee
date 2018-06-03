@@ -16,11 +16,7 @@ namespace CoffeeManage
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            Application.Run(new ThemVaCapNhatMon());
-=======
-            Application.Run(new Choose());
->>>>>>> cb9af79bb8b97449885b763565b6789560b83718
+            Application.Run(new Login());
         }
     }
 }
