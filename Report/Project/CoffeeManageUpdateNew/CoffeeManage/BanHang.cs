@@ -294,6 +294,12 @@ namespace CoffeeManage
             txtKH.Text = ten;
         }
 
+        private void btnInHoaDon_Click(object sender, EventArgs e)
+        {
+            frmReportHD f = new frmReportHD();
+            f.Show();
+        }
+
         private void dgvThongTinNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             dongnv = dgvThongTinNhanVien.CurrentCell.RowIndex;
@@ -331,9 +337,10 @@ namespace CoffeeManage
         {
             try
             {
-                LopXuLyDuLieu.BanHang bh = new LopXuLyDuLieu.BanHang();
+                
                 if (txtMaHD.Text!="" && cbLoaiHd.Text!="" && txtNhanVien.Text!="" && txtKH.Text!="" && txtThanhTien.Text!="0")
                 {
+                    LopXuLyDuLieu.BanHang bh = new LopXuLyDuLieu.BanHang();
                     bh.GhiBangHoaDon(txtMaHD.Text, cbLoaiHd.Text, txtKH.Text, txtNhanVien.Text, dtpNgayLap.Text, txtThanhTien.Text, ref err);
                     for (int i = 0; i < dgvMonDaChon.Rows.Count - 1; i++)
                     {
@@ -351,7 +358,7 @@ namespace CoffeeManage
                 else
                 {
                     MessageBox.Show("Thiếu Thông Tin");
-                    KetNoi.sqlcnt.Open();
+               //     KetNoi.sqlcnt.Open();
                 }
                 
             }

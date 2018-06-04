@@ -53,6 +53,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txtNhanVien = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvThongTinNhanVien = new System.Windows.Forms.DataGridView();
             this.MaNV1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,6 +85,7 @@
             this.ptAnh = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnInHoaDon = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
@@ -99,8 +102,6 @@
             this.fKHoaDonThucDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fKHoaDonThucDonBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.nhanVienTableAdapter = new CoffeeManage.ManagementCoffeeDataSet1TableAdapters.NhanVienTableAdapter();
-            this.txtNhanVien = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThongTinMon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thucDonBindingSource)).BeginInit();
@@ -200,7 +201,7 @@
             // 
             this.btnThem.BackColor = System.Drawing.Color.White;
             this.btnThem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(1037, 544);
+            this.btnThem.Location = new System.Drawing.Point(1037, 473);
             this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(143, 48);
@@ -213,7 +214,7 @@
             // 
             this.btnBot.BackColor = System.Drawing.Color.White;
             this.btnBot.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBot.Location = new System.Drawing.Point(1037, 622);
+            this.btnBot.Location = new System.Drawing.Point(1037, 580);
             this.btnBot.Margin = new System.Windows.Forms.Padding(4);
             this.btnBot.Name = "btnBot";
             this.btnBot.Size = new System.Drawing.Size(143, 48);
@@ -372,6 +373,24 @@
             this.groupBox4.TabIndex = 5;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Thông Tin Hóa Đơn";
+            // 
+            // txtNhanVien
+            // 
+            this.txtNhanVien.Location = new System.Drawing.Point(222, 360);
+            this.txtNhanVien.Name = "txtNhanVien";
+            this.txtNhanVien.ReadOnly = true;
+            this.txtNhanVien.Size = new System.Drawing.Size(241, 35);
+            this.txtNhanVien.TabIndex = 25;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(96, 370);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 23);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Nhân Viên :";
             // 
             // groupBox3
             // 
@@ -644,6 +663,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.btnInHoaDon);
             this.groupBox5.Controls.Add(this.pictureBox2);
             this.groupBox5.Controls.Add(this.btnThanhToan);
             this.groupBox5.Controls.Add(this.btnThoat);
@@ -655,6 +675,19 @@
             this.groupBox5.TabIndex = 15;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Công Cụ";
+            // 
+            // btnInHoaDon
+            // 
+            this.btnInHoaDon.BackColor = System.Drawing.Color.White;
+            this.btnInHoaDon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInHoaDon.Location = new System.Drawing.Point(11, 70);
+            this.btnInHoaDon.Margin = new System.Windows.Forms.Padding(4);
+            this.btnInHoaDon.Name = "btnInHoaDon";
+            this.btnInHoaDon.Size = new System.Drawing.Size(143, 48);
+            this.btnInHoaDon.TabIndex = 5;
+            this.btnInHoaDon.Text = "In Hóa Đơn";
+            this.btnInHoaDon.UseVisualStyleBackColor = false;
+            this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
             // 
             // pictureBox2
             // 
@@ -671,7 +704,7 @@
             // 
             this.btnThanhToan.BackColor = System.Drawing.Color.White;
             this.btnThanhToan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThanhToan.Location = new System.Drawing.Point(7, 75);
+            this.btnThanhToan.Location = new System.Drawing.Point(11, 126);
             this.btnThanhToan.Margin = new System.Windows.Forms.Padding(4);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(143, 48);
@@ -684,7 +717,7 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.White;
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(7, 150);
+            this.btnThoat.Location = new System.Drawing.Point(11, 182);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(143, 48);
@@ -800,24 +833,6 @@
             // nhanVienTableAdapter
             // 
             this.nhanVienTableAdapter.ClearBeforeFill = true;
-            // 
-            // txtNhanVien
-            // 
-            this.txtNhanVien.Location = new System.Drawing.Point(222, 360);
-            this.txtNhanVien.Name = "txtNhanVien";
-            this.txtNhanVien.ReadOnly = true;
-            this.txtNhanVien.Size = new System.Drawing.Size(241, 35);
-            this.txtNhanVien.TabIndex = 25;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(96, 370);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 23);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Nhân Viên :";
             // 
             // BanHang
             // 
@@ -947,5 +962,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiNVDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox txtNhanVien;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnInHoaDon;
     }
 }

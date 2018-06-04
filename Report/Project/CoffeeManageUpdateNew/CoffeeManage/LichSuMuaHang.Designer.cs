@@ -31,38 +31,39 @@
             this.components = new System.ComponentModel.Container();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnLamMoi = new System.Windows.Forms.Button();
             this.txtNgay = new System.Windows.Forms.TextBox();
             this.txtTenThuNgan = new System.Windows.Forms.TextBox();
             this.txtMaHD = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLamMoi = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvHoaDon = new System.Windows.Forms.DataGridView();
-            this.managementCoffeeDataSet1 = new CoffeeManage.ManagementCoffeeDataSet1();
-            this.monDaChonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.monDaChonTableAdapter = new CoffeeManage.ManagementCoffeeDataSet1TableAdapters.MonDaChonTableAdapter();
-            this.hoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hoaDonTableAdapter = new CoffeeManage.ManagementCoffeeDataSet1TableAdapters.HoaDonTableAdapter();
-            this.hoaDonBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.MaHD1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Loai1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNV1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKH1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ngay1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoaDonBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.managementCoffeeDataSet1 = new CoffeeManage.ManagementCoffeeDataSet1();
+            this.monDaChonBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.monDaChonTableAdapter = new CoffeeManage.ManagementCoffeeDataSet1TableAdapters.MonDaChonTableAdapter();
+            this.hoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hoaDonTableAdapter = new CoffeeManage.ManagementCoffeeDataSet1TableAdapters.HoaDonTableAdapter();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvChiTietHoaDon = new System.Windows.Forms.DataGridView();
+            this.btnInLichSu = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.managementCoffeeDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.monDaChonBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietHoaDon)).BeginInit();
             this.SuspendLayout();
@@ -98,19 +99,6 @@
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tìm Kiếm";
-            // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLamMoi.Location = new System.Drawing.Point(1345, 440);
-            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.Size = new System.Drawing.Size(299, 76);
-            this.btnLamMoi.TabIndex = 2;
-            this.btnLamMoi.Text = "Làm Mới";
-            this.btnLamMoi.UseVisualStyleBackColor = true;
-            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
             // 
             // txtNgay
             // 
@@ -172,11 +160,24 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Hóa Đơn:";
             // 
+            // btnLamMoi
+            // 
+            this.btnLamMoi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLamMoi.Location = new System.Drawing.Point(1341, 403);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(299, 76);
+            this.btnLamMoi.TabIndex = 2;
+            this.btnLamMoi.Text = "Làm Mới";
+            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+            // 
             // btnXoa
             // 
             this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(1345, 554);
+            this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(1341, 487);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(299, 80);
@@ -189,7 +190,7 @@
             // 
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(1345, 678);
+            this.btnThoat.Location = new System.Drawing.Point(1341, 663);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(299, 80);
@@ -234,34 +235,6 @@
             this.dgvHoaDon.TabIndex = 0;
             this.dgvHoaDon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoaDon_CellContentClick);
             // 
-            // managementCoffeeDataSet1
-            // 
-            this.managementCoffeeDataSet1.DataSetName = "ManagementCoffeeDataSet1";
-            this.managementCoffeeDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // monDaChonBindingSource
-            // 
-            this.monDaChonBindingSource.DataMember = "MonDaChon";
-            this.monDaChonBindingSource.DataSource = this.managementCoffeeDataSet1;
-            // 
-            // monDaChonTableAdapter
-            // 
-            this.monDaChonTableAdapter.ClearBeforeFill = true;
-            // 
-            // hoaDonBindingSource
-            // 
-            this.hoaDonBindingSource.DataMember = "HoaDon";
-            this.hoaDonBindingSource.DataSource = this.managementCoffeeDataSet1;
-            // 
-            // hoaDonTableAdapter
-            // 
-            this.hoaDonTableAdapter.ClearBeforeFill = true;
-            // 
-            // hoaDonBindingSource1
-            // 
-            this.hoaDonBindingSource1.DataMember = "HoaDon";
-            this.hoaDonBindingSource1.DataSource = this.managementCoffeeDataSet1;
-            // 
             // MaHD1
             // 
             this.MaHD1.DataPropertyName = "MaHD";
@@ -298,6 +271,34 @@
             this.ThanhTien.HeaderText = "Thành Tiền";
             this.ThanhTien.Name = "ThanhTien";
             // 
+            // hoaDonBindingSource1
+            // 
+            this.hoaDonBindingSource1.DataMember = "HoaDon";
+            this.hoaDonBindingSource1.DataSource = this.managementCoffeeDataSet1;
+            // 
+            // managementCoffeeDataSet1
+            // 
+            this.managementCoffeeDataSet1.DataSetName = "ManagementCoffeeDataSet1";
+            this.managementCoffeeDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // monDaChonBindingSource
+            // 
+            this.monDaChonBindingSource.DataMember = "MonDaChon";
+            this.monDaChonBindingSource.DataSource = this.managementCoffeeDataSet1;
+            // 
+            // monDaChonTableAdapter
+            // 
+            this.monDaChonTableAdapter.ClearBeforeFill = true;
+            // 
+            // hoaDonBindingSource
+            // 
+            this.hoaDonBindingSource.DataMember = "HoaDon";
+            this.hoaDonBindingSource.DataSource = this.managementCoffeeDataSet1;
+            // 
+            // hoaDonTableAdapter
+            // 
+            this.hoaDonTableAdapter.ClearBeforeFill = true;
+            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
@@ -323,6 +324,19 @@
             this.dgvChiTietHoaDon.Size = new System.Drawing.Size(1149, 305);
             this.dgvChiTietHoaDon.TabIndex = 0;
             // 
+            // btnInLichSu
+            // 
+            this.btnInLichSu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnInLichSu.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInLichSu.Location = new System.Drawing.Point(1341, 575);
+            this.btnInLichSu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnInLichSu.Name = "btnInLichSu";
+            this.btnInLichSu.Size = new System.Drawing.Size(299, 80);
+            this.btnInLichSu.TabIndex = 10;
+            this.btnInLichSu.Text = "In Hóa Đơn";
+            this.btnInLichSu.UseVisualStyleBackColor = true;
+            this.btnInLichSu.Click += new System.EventHandler(this.btnInHoaDon_Click);
+            // 
             // LichSuMuaHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -332,8 +346,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1755, 801);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnLamMoi);
+            this.Controls.Add(this.btnInLichSu);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.groupBox2);
@@ -347,10 +363,10 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.managementCoffeeDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.monDaChonBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hoaDonBindingSource1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiTietHoaDon)).EndInit();
             this.ResumeLayout(false);
@@ -387,5 +403,6 @@
         private System.Windows.Forms.BindingSource hoaDonBindingSource1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvChiTietHoaDon;
+        private System.Windows.Forms.Button btnInLichSu;
     }
 }

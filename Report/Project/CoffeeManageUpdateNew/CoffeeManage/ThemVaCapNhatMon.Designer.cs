@@ -35,7 +35,6 @@
             this.txtGia = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cbLoai = new System.Windows.Forms.ComboBox();
-            this.ptbAnh = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnAnh = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -45,8 +44,10 @@
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.txtMaMon = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAnh)).BeginInit();
+            this.reportHDTableAdapter1 = new CoffeeManage.ManagementCoffeeDataSet1TableAdapters.ReportHDTableAdapter();
+            this.ptbAnh = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAnh)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -116,17 +117,6 @@
             this.cbLoai.Size = new System.Drawing.Size(239, 31);
             this.cbLoai.TabIndex = 3;
             // 
-            // ptbAnh
-            // 
-            this.ptbAnh.BackColor = System.Drawing.Color.White;
-            this.ptbAnh.Location = new System.Drawing.Point(654, 95);
-            this.ptbAnh.Margin = new System.Windows.Forms.Padding(4);
-            this.ptbAnh.Name = "ptbAnh";
-            this.ptbAnh.Size = new System.Drawing.Size(240, 180);
-            this.ptbAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbAnh.TabIndex = 4;
-            this.ptbAnh.TabStop = false;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -173,8 +163,8 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.ptbAnh);
+            this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.btnQuayLai);
             this.panel1.Controls.Add(this.btnCapNhat);
             this.panel1.Controls.Add(this.btnThem);
@@ -258,6 +248,19 @@
             this.txtMaMon.Size = new System.Drawing.Size(239, 22);
             this.txtMaMon.TabIndex = 2;
             // 
+            // reportHDTableAdapter1
+            // 
+            this.reportHDTableAdapter1.ClearBeforeFill = true;
+            // 
+            // ptbAnh
+            // 
+            this.ptbAnh.BackColor = System.Drawing.Color.Transparent;
+            this.ptbAnh.Location = new System.Drawing.Point(732, 97);
+            this.ptbAnh.Name = "ptbAnh";
+            this.ptbAnh.Size = new System.Drawing.Size(157, 131);
+            this.ptbAnh.TabIndex = 7;
+            this.ptbAnh.TabStop = false;
+            // 
             // ThemVaCapNhatMon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -269,9 +272,9 @@
             this.Name = "ThemVaCapNhatMon";
             this.Text = "ThemMon";
             this.Load += new System.EventHandler(this.ThemMon_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ptbAnh)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbAnh)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -284,7 +287,6 @@
         private System.Windows.Forms.TextBox txtGia;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbLoai;
-        private System.Windows.Forms.PictureBox ptbAnh;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnAnh;
         private System.Windows.Forms.Button btnThem;
@@ -294,5 +296,7 @@
         private System.Windows.Forms.TextBox txtMaMon;
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Label label7;
+        private ManagementCoffeeDataSet1TableAdapters.ReportHDTableAdapter reportHDTableAdapter1;
+        private System.Windows.Forms.PictureBox ptbAnh;
     }
 }

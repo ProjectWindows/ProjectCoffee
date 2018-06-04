@@ -181,5 +181,11 @@ namespace CoffeeManage
             mahd = dgvHoaDon.Rows[r].Cells[0].Value.ToString();
             LoadDataChiTiet(mahd);
         }
+
+        private void btnInHoaDon_Click(object sender, EventArgs e)
+        {
+            InHoaDon i = new InHoaDon();
+            i.Show();
+        }
     }
 }

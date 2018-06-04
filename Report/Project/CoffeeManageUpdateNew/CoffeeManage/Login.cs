@@ -100,20 +100,27 @@ namespace CoffeeManage
         }
 
         
-        public bool NhapMatKhau(string MatKhau)
-        {
-            MatKhau = MatKhau.Trim();
-            if (MatKhau == string.Empty)
-            {
-                return false;
-            }
-            else return true;
-        }
+       
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
                LoadData();
            
+        }
+
+        private void checkBox1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                txtPassWord.UseSystemPasswordChar = true;
+            }
+            else
+                txtPassWord.UseSystemPasswordChar = false;
         }
     }
 }

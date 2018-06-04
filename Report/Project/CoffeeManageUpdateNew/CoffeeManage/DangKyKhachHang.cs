@@ -37,7 +37,7 @@ namespace CoffeeManage
                 this.txtSDT.Text = sdt;
                 btnThem.Enabled = false;
                 btnCapNhat.Enabled = true;
-
+                this.txtMaKH.Enabled = false;
             }
             else
             {
@@ -71,15 +71,21 @@ namespace CoffeeManage
         private void DangKyKhachHang_Load(object sender, EventArgs e)
         {
             LoadData();
+            //this.reportViewer1.RefreshReport();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
             try
             {
-                KhachHang KH = new KhachHang();
-                KH.ThemKhachHang(txtMaKH.Text,txtTenKH.Text,txtDiaChi.Text,txtSDT.Text,ref err);
-                MessageBox.Show("Thêm Thành Công");
+                if (txtMaKH.Text != "" && txtTenKH.Text != "" && txtSDT.Text != "" && txtDiaChi.Text != "")
+                {
+                    KhachHang KH = new KhachHang();
+                    KH.ThemKhachHang(txtMaKH.Text, txtTenKH.Text, txtDiaChi.Text, txtSDT.Text, ref err);
+                    MessageBox.Show("Thêm Thành Công");
+                }
+                else
+                    MessageBox.Show("Thiếu Thông Tin");
             }
             catch(SqlException)
             {

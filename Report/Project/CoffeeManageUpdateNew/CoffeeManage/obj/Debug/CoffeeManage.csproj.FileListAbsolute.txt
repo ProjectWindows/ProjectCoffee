@@ -137,13 +137,11 @@ D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\CoffeeManage.exe
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\CoffeeManage.pdb
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\EntityFramework.dll
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\EntityFramework.SqlServer.dll
-D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\Microsoft.ReportViewer.Common.dll
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\Microsoft.ReportViewer.Design.dll
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\Microsoft.ReportViewer.WebDesign.dll
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\Microsoft.ReportViewer.WebForms.dll
-D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\Microsoft.SqlServer.Types.dll
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\ReportViewerForMvc.dll
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\ZanotisReportDesigner.dll
@@ -270,3 +268,6 @@ D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\obj\Debug\CoffeeManage.cspr
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\obj\Debug\CoffeeManage.csproj.CopyComplete
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\obj\Debug\CoffeeManage.exe
 D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\obj\Debug\CoffeeManage.pdb
+D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\obj\Debug\CoffeeManage.frmReportHD.resources
+D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\bin\Debug\rpHoaDon.rdlc
+D:\Report\Project\CoffeeManageUpdateNew\CoffeeManage\obj\Debug\CoffeeManage.InHoaDon.resources
