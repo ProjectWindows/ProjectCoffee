@@ -19,15 +19,18 @@ namespace DoAnnn.Coffee
             DataTable dt = new DataTable();
             dt.Columns.Add("Mã");
             dt.Columns.Add("HọvàTên");
+            dt.Columns.Add("Tuổi");
+            dt.Columns.Add("ĐịaChỉ");
+            dt.Columns.Add("SĐT");
             dt.Columns.Add("GiớiTính");
             dt.Columns.Add("Loại");
-            dt.Columns.Add("ĐịaChỉ");
+
             dt.Columns.Add("Ca LV");
             dt.Columns.Add("Lương");
 
             foreach (var p in tps)
             {
-                dt.Rows.Add(p.MaNV, p.HoVaTenNV, p.GioiTinh,p.LoaiNV,p.DiaChiNV,p.CaLV,p.LuongCB);
+                dt.Rows.Add(p.MaNV, p.HoVaTenNV,p.Tuoi, p.DiaChiNV, p.SDT, p.GioiTinh,p.LoaiNV,p.CaLV,p.LuongCB);
             }
             return dt;
         }
